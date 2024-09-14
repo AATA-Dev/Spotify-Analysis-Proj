@@ -7,5 +7,18 @@ This Spotify Analytics Data Engineering project utilizes AWS to build a robust d
 
 ![Project Architecture](./Spotify%20Project%20Architecture.jpeg)
 
+## Technologies Used
+
+1.Scripting Language - SQL
+2.Amazon Web Services
+   - S3 Storage
+   - Glue ETL
+   - Glue Crawler
+   - Athena
+   - Quicksight
+
+## Dataset Used 
+
+
 
 
