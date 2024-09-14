@@ -5,4 +5,6 @@ This Spotify Analytics Data Engineering project utilizes AWS to build a robust d
 
 ## Architecture
 
+![Project Architecture](Spotify Project Architecture.jpeg)
+
 
