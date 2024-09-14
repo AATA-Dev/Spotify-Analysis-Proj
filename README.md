@@ -10,7 +10,9 @@ This Spotify Analytics Data Engineering project utilizes AWS to build a robust d
 ## Technologies Used
 
 1.Scripting Language - SQL
+
 2.Amazon Web Services
+
    - S3 Storage
    - Glue ETL
    - Glue Crawler
@@ -19,6 +21,11 @@ This Spotify Analytics Data Engineering project utilizes AWS to build a robust d
 
 ## Dataset Used 
 
+## Data Model
+
+## Scripts Used
+
+## Issues Faced
 
 
 
