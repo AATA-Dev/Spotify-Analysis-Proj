@@ -36,10 +36,38 @@ The project includes a data model consisting of two distinct tables, each repres
 
 ## Scripts Used
 
+### Date Format Adjustment Script
+
+Due to QuickSight's date format compatibility issues, I used the following SQL query to split and convert the `release_date` field into separate `year` and `month` columns, allowing for easier analysis.
+
+```sql
+SELECT 
+    *,  
+    split(release_date, '/')[3] AS release_date_year, -- Extract year
+    CASE split(release_date, '/')[2]  -- Extract month (2nd element) and convert to month name
+        WHEN '01' THEN 'January'
+        WHEN '02' THEN 'February'
+        WHEN '03' THEN 'March'
+        WHEN '04' THEN 'April'
+        WHEN '05' THEN 'May'
+        WHEN '06' THEN 'June'
+        WHEN '07' THEN 'July'
+        WHEN '08' THEN 'August'
+        WHEN '09' THEN 'September'
+        WHEN '10' THEN 'October'
+        WHEN '11' THEN 'November'
+        WHEN '12' THEN 'December'
+    END AS release_date_month -- Add calculated field for month name
+FROM 
+    datawarehouse;
+```
+
+
 ## Issues Faced
 
 **Date Format Incompatibility:** Despite adjusting the schema within QuickSight, the platform continued to reject the original date format. To resolve this, I split the date field into separate year and month columns, which allowed QuickSight to properly interpret the data. This solution enabled time-based analysis and ensured compatibility with QuickSight's date format requirements.
 
 **Table Schema Recognition Issue:** QuickSight failed to automatically recognize the table schema, preventing direct use of SQL queries for analysis. To bypass this limitation, I leveraged calculated columns within QuickSight to generate the required metrics, allowing the analysis to proceed effectively despite the schema detection issue.
 
+## Dashboard
 
