@@ -30,11 +30,16 @@ https://www.kaggle.com/datasets/tonygordonjr/spotify-dataset-2023
 https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset
 
 ## Data Model
+![Project Data mode](./Data%20Model%20Spotify.jpeg)
 
+The project includes a data model consisting of two distinct tables, each representing separate segments of Spotify data: one focused on user behavior and the other on artist, album, and track information. While these tables do not directly interact, as they originate from different datasets with unique focuses, they collectively provide a comprehensive view of Spotify's ecosystem. By analyzing each segment independently, the project captures valuable insights into both user engagement patterns and the performance of artists, albums, and tracks.
 
 ## Scripts Used
 
 ## Issues Faced
 
+**Date Format Incompatibility:** Despite adjusting the schema within QuickSight, the platform continued to reject the original date format. To resolve this, I split the date field into separate year and month columns, which allowed QuickSight to properly interpret the data. This solution enabled time-based analysis and ensured compatibility with QuickSight's date format requirements.
+
+**Table Schema Recognition Issue:** QuickSight failed to automatically recognize the table schema, preventing direct use of SQL queries for analysis. To bypass this limitation, I leveraged calculated columns within QuickSight to generate the required metrics, allowing the analysis to proceed effectively despite the schema detection issue.
 
 
