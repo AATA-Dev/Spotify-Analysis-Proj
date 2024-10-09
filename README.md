@@ -36,11 +36,42 @@ https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset
 The project includes a data model consisting of two distinct tables, each representing separate segments of Spotify data: one focused on user behavior and the other on artist, album, and track information. While these tables do not directly interact, as they originate from different datasets with unique focuses, they collectively provide a comprehensive view of Spotify's ecosystem. By analyzing each segment independently, the project captures valuable insights into both user engagement patterns and the performance of artists, albums, and tracks.
 
 
-##Executive Summary 
+## Executive Summary 
 
 To enhance user growth, retention, and revenue, several strategic recommendations can be implemented. First, incentivizing Premium subscriptions by tailoring offers to the core demographic (ages 20-35) and younger users can drive growth. Focus on exclusive music content, personalized playlists, and lifestyle-relevant features such as offline listening for travel or leisure to make Premium more appealing. Additionally, expanding youth engagement through a student discount or youth-oriented Premium plan, verified by university credentials, would attract the 13-20 age group, who are price-sensitive but highly engaged with music. Content diversification is also key—while music remains dominant, promoting podcasts with highly personalized recommendations could encourage broader content consumption and increase platform stickiness. Lastly, fostering fan-centric features like virtual fan meetups, exclusive content, or artist Q&As would strengthen the connection between users and their favorite artists, leading to higher engagement and retention. By focusing on driving subscriptions, optimizing content offerings, and deepening engagement with younger users, Spotify can improve both its user base and revenue streams.
 
 Below is an overview of the user interactions 
+
+![Dashboard Overview](./Dashboard%20Overview.jpg)
+
+
+## Outcome Highlights and Recommendations
+
+### User Insights
+- The Free subscription plan is more popular than Premium, with a significant user base aged 20-35.
+- Music dominates content preferences, while podcasts have room for growth.
+  
+**Recommendation:**  
+Drive Premium conversions by highlighting features like offline listening and higher audio quality, especially for leisure and travel use.
+
+### Track and Artist Performance
+- Columbia Records and Warner Records lead in popular track representation.
+
+**Recommendation:**  
+Strengthen partnerships with top labels and provide more visibility to independent artists through curated playlists and promotional efforts.
+
+### Content and Genre Focus
+- Pop and K-pop are the leading genres, with Karaoke holding the most followers.
+
+**Recommendation:**  
+Increase engagement by offering exclusive content for Pop and K-pop fans and supporting emerging genres like ATL Hip Hop.
+
+### Top Artist Analysis
+- Taylor Swift leads as the most popular artist, with her album *“Red (Taylor's Version)”* being a top performer.
+
+**Recommendation:**  
+Leverage exclusive content and fan-centric features, such as virtual concerts and early album access, to incentivize Premium upgrades and boost artist engagement.
+
 
 ## Scripts Used
 
@@ -76,6 +107,11 @@ FROM
 **Date Format Incompatibility:** Despite adjusting the schema within QuickSight, the platform continued to reject the original date format. To resolve this, I split the date field into separate year and month columns, which allowed QuickSight to properly interpret the data. This solution enabled time-based analysis and ensured compatibility with QuickSight's date format requirements.
 
 **Table Schema Recognition Issue:** QuickSight failed to automatically recognize the table schema, preventing direct use of SQL queries for analysis. To bypass this limitation, I leveraged calculated columns within QuickSight to generate the required metrics, allowing the analysis to proceed effectively despite the schema detection issue.
+
+**ETL Job Replication for Schema Resolution:** 
+
+While leveraging calculated columns in QuickSight provided a temporary workaround for the schema recognition issue, it introduced limitations in handling larger datasets and more complex transformations. To ensure a more scalable and efficient solution, I replicated the data model using an ETL job in AWS Glue. This allowed for comprehensive pre-processing of the data, including schema restructuring and metric calculations, before it was loaded into Athena for querying. By offloading the transformations to Glue, I ensured that QuickSight could seamlessly interpret the data without further schema issues, enabling smoother, faster analysis with improved query performance. This solution resolved the schema recognition limitations while streamlining the overall data pipeline.
+
 
 ## Dashboard
 
