@@ -31,7 +31,7 @@ https://www.kaggle.com/datasets/tonygordonjr/spotify-dataset-2023
 https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset
 
 ## Data Model
-![Project Data mode](./Data%20Model%20Spotify.jpeg)
+![Project Data mode](./Project%20Data%20Model%20Spotify.jpeg)
 
 The project includes a data model consisting of two distinct tables, each representing separate segments of Spotify data: one focused on user behavior and the other on artist, album, and track information. While these tables do not directly interact, as they originate from different datasets with unique focuses, they collectively provide a comprehensive view of Spotify's ecosystem. By analyzing each segment independently, the project captures valuable insights into both user engagement patterns and the performance of artists, albums, and tracks.
 
