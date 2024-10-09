@@ -3,6 +3,7 @@
 
 This Spotify Analytics Data Engineering project utilizes AWS to build a robust data pipeline for analyzing user behavior, track performance, and artist metrics. Glue ETL handles data transformation, while Athena executes queries, and QuickSight provides real-time visualizations, offering insights into user interactions, track popularity, and album performance.
 
+
 ## Architecture
 
 ![Project Architecture](./Spotify%20Project%20Architecture.jpeg)
@@ -33,6 +34,13 @@ https://www.kaggle.com/datasets/meeraajayakumar/spotify-user-behavior-dataset
 ![Project Data mode](./Data%20Model%20Spotify.jpeg)
 
 The project includes a data model consisting of two distinct tables, each representing separate segments of Spotify data: one focused on user behavior and the other on artist, album, and track information. While these tables do not directly interact, as they originate from different datasets with unique focuses, they collectively provide a comprehensive view of Spotify's ecosystem. By analyzing each segment independently, the project captures valuable insights into both user engagement patterns and the performance of artists, albums, and tracks.
+
+
+##Executive Summary 
+
+To enhance user growth, retention, and revenue, several strategic recommendations can be implemented. First, incentivizing Premium subscriptions by tailoring offers to the core demographic (ages 20-35) and younger users can drive growth. Focus on exclusive music content, personalized playlists, and lifestyle-relevant features such as offline listening for travel or leisure to make Premium more appealing. Additionally, expanding youth engagement through a student discount or youth-oriented Premium plan, verified by university credentials, would attract the 13-20 age group, who are price-sensitive but highly engaged with music. Content diversification is also key—while music remains dominant, promoting podcasts with highly personalized recommendations could encourage broader content consumption and increase platform stickiness. Lastly, fostering fan-centric features like virtual fan meetups, exclusive content, or artist Q&As would strengthen the connection between users and their favorite artists, leading to higher engagement and retention. By focusing on driving subscriptions, optimizing content offerings, and deepening engagement with younger users, Spotify can improve both its user base and revenue streams.
+
+Below is an overview of the user interactions 
 
 ## Scripts Used
 
