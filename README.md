@@ -111,6 +111,10 @@ FROM
 
 ## Issues Faced
 
+**Dashboard Availability**
+
+Please note that the dashboard created for this project was originally hosted on AWS QuickSight. However, due to the ongoing costs associated with AWS services, the live version of the dashboard is not available for viewing at this time. To mitigate these costs, I have provided detailed screenshots and static exports of the key visualisations within this portfolio. These capture the insights generated from the data, allowing you to review the analysis and outcomes. If needed, I am happy to walk through the dashboard functionality or provide further details upon request.
+
 **Dataset Limitations**
 
 Although I extended the dataset using generative processes and Excel, certain limitations remain. Access to sensitive user details—such as demographics, location, and payment history—continues to be restricted due to Spotify's privacy and data protection policies. This restriction limits the ability to explore more advanced personalisation insights, such as detailed audience segmentation and user-specific recommendations.
