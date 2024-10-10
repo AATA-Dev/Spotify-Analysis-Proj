@@ -111,9 +111,17 @@ FROM
 
 ## Issues Faced
 
-**Date Format Incompatibility:** Despite adjusting the schema within QuickSight, the platform continued to reject the original date format. To resolve this, I split the date field into separate year and month columns, which allowed QuickSight to properly interpret the data. This solution enabled time-based analysis and ensured compatibility with QuickSight's date format requirements.
+**Dataset Limitations**
 
-**Table Schema Recognition Issue:** QuickSight failed to automatically recognize the table schema, preventing direct use of SQL queries for analysis. To bypass this limitation, I leveraged calculated columns within QuickSight to generate the required metrics, allowing the analysis to proceed effectively despite the schema detection issue.
+Although I extended the dataset using generative processes and Excel, certain limitations remain. Access to sensitive user details—such as demographics, location, and payment history—continues to be restricted due to Spotify's privacy and data protection policies. This restriction limits the ability to explore more advanced personalisation insights, such as detailed audience segmentation and user-specific recommendations.
+
+**Date Format Incompatibility:** 
+
+Even after adjusting the schema within QuickSight, the platform continued to reject the original date format. To resolve this, I split the date field into separate year and month columns, which allowed QuickSight to properly interpret the data. This solution enabled time-based analysis and ensured compatibility with QuickSight's date format requirements.
+
+**Table Schema Recognition Issue:** 
+
+QuickSight failed to automatically recognize the table schema, preventing direct use of SQL queries for analysis. To bypass this limitation, I leveraged calculated columns within QuickSight to generate the required metrics, allowing the analysis to proceed effectively despite the schema detection issue.
 
 **ETL Job Replication for Schema Resolution:** 
 
