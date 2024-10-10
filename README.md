@@ -1,7 +1,9 @@
 # Spotify-Analysis-Proj
 ## Introduction
 
-This Spotify Analytics Data Engineering project utilizes AWS to build a robust data pipeline for analyzing user behavior, track performance, and artist metrics. Glue ETL handles data transformation, while Athena executes queries, and QuickSight provides real-time visualizations, offering insights into user interactions, track popularity, and album performance.
+This Spotify Analytics Data Engineering project aims to build a scalable data pipeline using AWS, designed to deliver detailed insights into user behaviour and artist performance. For example, Spotify’s product team can utilise this pipeline to analyse how users interact with specific tracks, playlists, and albums. By using AWS Glue ETL for efficient data transformation, Athena for querying, and QuickSight for real-time visualisations, the team can track song popularity, listening habits, and album trends.
+
+This system allows Spotify to monitor key metrics such as play count, skips, likes, and playlist additions, helping optimise recommendations and improve user retention. It also enables Spotify’s A&R and artist relations teams to provide artists with detailed analytics on their streaming performance, supporting the development of promotional strategies and boosting fan engagement.
 
 
 ## Architecture
@@ -37,7 +39,13 @@ The project features a data model with a standalone user table and separate, int
 
 ## Executive Summary 
 
-To enhance user growth, retention, and revenue, several strategic recommendations can be implemented. First, incentivizing Premium subscriptions by tailoring offers to the core demographic (ages 20-35) and younger users can drive growth. Focus on exclusive music content, personalized playlists, and lifestyle-relevant features such as offline listening for travel or leisure to make Premium more appealing. Additionally, expanding youth engagement through a student discount or youth-oriented Premium plan, verified by university credentials, would attract the 13-20 age group, who are price-sensitive but highly engaged with music. Content diversification is also key—while music remains dominant, promoting podcasts with highly personalized recommendations could encourage broader content consumption and increase platform stickiness. Lastly, fostering fan-centric features like virtual fan meetups, exclusive content, or artist Q&As would strengthen the connection between users and their favorite artists, leading to higher engagement and retention. By focusing on driving subscriptions, optimizing content offerings, and deepening engagement with younger users, Spotify can improve both its user base and revenue streams.
+To enhance user growth, retention, and revenue, several strategic recommendations can be implemented.
+
+First, incentivizing Premium subscriptions by tailoring offers to the core demographic (ages 20-35) and younger users can drive growth. Focus on exclusive music content, personalized playlists, and lifestyle-relevant features such as offline listening for travel or leisure to make Premium more appealing. 
+
+Additionally, expanding youth engagement through a student discount or youth-oriented Premium plan, verified by university credentials, would attract the 13-20 age group, who are price-sensitive but highly engaged with music. Content diversification is also key—while music remains dominant, promoting podcasts with highly personalized recommendations could encourage broader content consumption and increase platform stickiness.
+
+Lastly, fostering fan-centric features like virtual fan meetups, exclusive content, or artist Q&As would strengthen the connection between users and their favorite artists, leading to higher engagement and retention. By focusing on driving subscriptions, optimizing content offerings, and deepening engagement with younger users, Spotify can improve both its user base and revenue streams.
 
 Below is an overview of the user interactions 
 
