@@ -47,9 +47,34 @@ Additionally, expanding youth engagement through a student discount or youth-ori
 
 Lastly, fostering fan-centric features like virtual fan meetups, exclusive content, or artist Q&As would strengthen the connection between users and their favorite artists, leading to higher engagement and retention. By focusing on driving subscriptions, optimizing content offerings, and deepening engagement with younger users, Spotify can improve both its user base and revenue streams.
 
-Below is an overview of the user interactions 
+## Dashboard
 
-![Dashboard Overview](./Dashboard%20Overview.jpg)
+Below is a summary of the different views across the dashboard, with screenshots to follow for each page and interaction : 
+
+### User
+
+This view offers key insights into user behaviour, including metrics such as play count, skips, and playlist additions. It helps track trends in user engagement, providing essential data for optimising recommendations and enhancing user retention.
+
+![User Overview](./Dashboard%20Overview.jpg)
+
+### Label
+
+
+The Label Dashboard presents performance data for record labels, such as track releases and streaming numbers. This helps labels monitor their catalogue's success and assess market trends over time.
+
+![Label Overview](./Label%20Dashboard.jpg)
+
+### Genre Analysis
+
+
+This view highlights genre-based analytics, allowing the team to explore trends in music preferences across different genres. It offers insights into what is currently popular, helping to shape recommendations and content strategies.
+
+![Genre Overview](./Genre%20Dashboard.jpg)
+
+### Artist Performance
+The Artist Dashboard provides detailed analytics on artist performance, including streaming figures and fan engagement. This information supports Spotify’s artist relations teams in developing promotional strategies and enhancing fan interaction.
+
+![Artist Overview](./Artist%20Dashboard.jpg)
 
 
 ## Outcome Highlights and Recommendations
