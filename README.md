@@ -157,5 +157,5 @@ QuickSight failed to automatically recognize the table schema, preventing direct
 While leveraging calculated columns in QuickSight provided a temporary workaround for the schema recognition issue, it introduced limitations in handling larger datasets and more complex transformations. To ensure a more scalable and efficient solution, I replicated the data model using an ETL job in AWS Glue. This allowed for comprehensive pre-processing of the data, including schema restructuring and metric calculations, before it was loaded into Athena for querying. By offloading the transformations to Glue, I ensured that QuickSight could seamlessly interpret the data without further schema issues, enabling smoother, faster analysis with improved query performance. This solution resolved the schema recognition limitations while streamlining the overall data pipeline.
 
 
-## Dashboard
+![ETL Job](./AWS%20Glue%20Job.jpg)
 
